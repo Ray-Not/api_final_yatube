@@ -44,20 +44,20 @@ class Post(models.Model):
         return self.text
 
 
-class Comment(models.Model): 
+class Comment(models.Model):
 
     author = models.ForeignKey(
-        User, 
-        on_delete=models.CASCADE, 
-        related_name='comments', 
-        verbose_name='Автор комментария' 
-    ) 
+        User,
+        on_delete=models.CASCADE,
+        related_name='comments',
+        verbose_name='Автор комментария'
+    )
     post = models.ForeignKey(
-        Post, 
-        on_delete=models.CASCADE, 
-        related_name='comments', 
-        verbose_name='Объект прокомментированного поста' 
-    ) 
+        Post,
+        on_delete=models.CASCADE,
+        related_name='comments',
+        verbose_name='Объект прокомментированного поста'
+    )
     text = models.TextField(verbose_name='Текст комментария')
     created = models.DateTimeField(
         verbose_name='Дата добавления',
