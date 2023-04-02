@@ -42,5 +42,16 @@ python manage.py runserver
 ## Некоторые примеры запросов к API:
 <img src="https://i.imgur.com/PouBDLR.jpg">
 ```
-http://127.0.0.1:8000/api/v1/posts/{id}/
+/api/v1/posts/{id}/
+```
+### Response:
+```
+{
+  "id": 0,
+  "author": "string",
+  "text": "string",
+  "pub_date": "2019-08-24T14:15:22Z",
+  "image": "string",
+  "group": 0
+}
 ```
