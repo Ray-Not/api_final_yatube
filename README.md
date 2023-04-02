@@ -70,10 +70,8 @@ python manage.py runserver
 ### Ответ:
 
 ```
-[
-  {
-    "user": "string",
-    "following": "string"
-  }
-]
+ {
+   "user": "string",
+   "following": "string"
+ }
 ```
