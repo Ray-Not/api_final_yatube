@@ -41,10 +41,14 @@ python manage.py runserver
 
 ## Некоторые примеры запросов к API:
 <img src="https://i.imgur.com/PouBDLR.jpg">
+
+### Получение информации о публикации:
+
 ```
 /api/v1/posts/{id}/
 ```
-### Response:
+
+### Ответ:
 
 ```
 {
@@ -55,4 +59,21 @@ python manage.py runserver
   "image": "string",
   "group": 0
 }
+```
+
+### Получение информации о публикации:
+
+```
+/api/v1/posts/{id}/
+```
+
+### Ответ:
+
+```
+[
+  {
+    "user": "string",
+    "following": "string"
+  }
+]
 ```
