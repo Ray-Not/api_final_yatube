@@ -45,6 +45,7 @@ python manage.py runserver
 /api/v1/posts/{id}/
 ```
 ### Response:
+
 ```
 {
   "id": 0,
