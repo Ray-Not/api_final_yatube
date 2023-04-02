@@ -1,35 +1,46 @@
-### Описание:
-Проект представляет собой API для социальной сети yatube
-# Версия:
+## Описание:
+Проект представляет собой API для социальной сети yatube.
+Полная документация указана на эндпоинте http://server:port/redoc/
+### Версия:
 1.0
 
-### Как запустить проект:
-Клонировать репозиторий и перейти в него в командной строке:
+## Как запустить проект:
+### Клонировать репозиторий и перейти в него в командной строке:
 ```
-git clone https://github.com/yandex-praktikum/kittygram.git
-```
-```
-cd kittygram
-```
-Cоздать и активировать виртуальное окружение:
-```
-python3 -m venv env
+git clone git@github.com:Ray-Not/api_final_yatube.git
 ```
 ```
-source env/bin/activate
+cd api_final_yatube
 ```
-Установить зависимости из файла requirements.txt:
+
+### Cоздать и активировать виртуальное окружение:
 ```
-python3 -m pip install --upgrade pip
+python -m venv env
+```
+```
+source env/Script/activate
+```
+
+### Установить зависимости из файла requirements.txt:
+```
+python -m pip install --upgrade pip
 ```
 ```
 pip install -r requirements.txt
 ```
-Выполнить миграции:
+
+### Выполнить миграции:
 ```
-python3 manage.py migrate
+python manage.py migrate
 ```
-Запустить проект:
+
+### Запустить проект:
 ```
-python3 manage.py runserver
+python manage.py runserver
+```
+
+## Некоторые примеры запросов к API:
+<img src="https://i.imgur.com/PouBDLR.jpg">
+```
+http://127.0.0.1:8000/api/v1/posts/{id}/
 ```
