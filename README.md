@@ -70,8 +70,36 @@ python manage.py runserver
 ### Ответ:
 
 ```
- {
-   "user": "string",
-   "following": "string"
- }
+{
+  "user": "string",
+  "following": "string"
+}
 ```
+
+### Получение токена для взаимодействия с API:
+
+```
+/api/v1/token/jwt/create/
+```
+
+### Тело запроса:
+
+```
+{
+  "username": "String",
+  "password": "String"
+}
+```
+
+### Ответ:
+
+```
+{
+  "refresh": "refersh_token",
+  "access": "access_token"
+}
+```
+
+### Использование в headers:
+
+```Authorization = Bearer <access_token>```
