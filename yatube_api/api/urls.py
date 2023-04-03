@@ -16,7 +16,9 @@ router.register('groups', ApiGroupViewSet)
 router.register('follow', ApiFollowViewSet, basename='follow')
 
 urlpatterns = [
-    path('v1/tokent/', include('djoser.urls')),
-    path('v1/token/', include('djoser.urls.jwt')),
+    path('v1/', include('djoser.urls')),
+    path('v1/', include('djoser.urls.jwt')),
+    # path('v1/token/', include('djoser.urls')), # --- Требуется тестами именно v1/ эндпоинт
+    # path('v1/token/', include('djoser.urls.jwt')),
     path('v1/', include(router.urls)),
 ]
