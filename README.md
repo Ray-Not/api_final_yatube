@@ -61,20 +61,7 @@ python manage.py runserver
 }
 ```
 
-### Получение информации о публикации:
-
-```
-/api/v1/posts/{id}/
-```
-
-### Ответ:
-
-```
-{
-  "user": "string",
-  "following": "string"
-}
-```
+<h2>POST</h2> <img src="https://2.bp.blogspot.com/-KNwljsQUoRo/XAfhVo5Kz8I/AAAAAAAADX8/m_eA5snyQrowSloNfpD93bnvjSGs_oBgwCLcBGAs/s1600/999.png">
 
 ### Получение токена для взаимодействия с API:
 
